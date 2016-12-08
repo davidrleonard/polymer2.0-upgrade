@@ -20,3 +20,4 @@ Replace with `this.querySelector()` instead.
 
 * `this.$.id`
 * `<dom-if if=""><template></template></dom-if>` <-- thinks docs are wrong?
+* event listeners
