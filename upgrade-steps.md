@@ -27,4 +27,8 @@ Note that you'll need to also convert how they are called in your component's Ja
 
 ## Converting your JavaScript
 
-* 
+#### Remove all `: function` from functions and `,` at the end of the functions
+
+#### Rewrite all `this.fire` to `this.dispatchEvent(new CustomEvent('px-event', {bubbles: true, composed: true}));`
+
+#### Move Listeners to `constructor()` and Rewrite them to `this.addEventListener('px-event',this._pxfunction.bind(this)); 
